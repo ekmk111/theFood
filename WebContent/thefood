@@ -1,0 +1,16 @@
+select * from FOOD where price < 7000;
+
+create table bab(
+idx number,
+store varchar2(20),
+menu varchar2(20),
+price number
+)
+
+select * from bab;
+
+drop table bab purge;
+
+CREATE SEQUENCE bab_seq;
+
+insert into bab values (bab_seq.nextval, '맘터', '싸이버거SET', 5600);
